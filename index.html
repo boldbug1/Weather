@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard Template</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white font-mono min-h-screen flex items-center justify-center p-6">
+
+  <!-- Core Component Container Card -->
+  <div class="w-full max-w-sm bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-white/20 shadow-2xl transition-all duration-300 hover:shadow-cyan-500/10">
+    
+    <!-- Top Meta Location Header -->
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h2 class="text-xs tracking-widest text-slate-400 uppercase font-bold">Current Station</h2>
+        <p class="text-sm font-sans font-semibold text-teal-400"><span id="location"></span></p>
+      </div>
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+      </span>
+    </div>
+
+    <!-- Core Main Metric Display Block -->
+    <div class="text-center my-6">
+      <div class="text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-300 drop-shadow-md">
+        <span id="temp-container"></span>°C
+      </div>
+      <p class="text-xs uppercase tracking-wider text-slate-300 mt-1 font-sans">Partly Sunny</p>
+      <p class="text-[10px] text-slate-500 font-mono mt-1">Feels like <span id="feels-like"></span>°C</p>
+    </div>
+
+    <!-- Data Grid Parameters Footer -->
+    <div class="grid grid-cols-2 gap-3 mt-6 border-t border-white/10 pt-4 text-xs">
+      <div class="bg-slate-950/40 p-3 rounded-xl border border-white/5">
+        <span class="text-[10px] tex t-slate-500 block uppercase mb-1">Wind Vector</span>
+        <span class="font-bold text-slate-200"><span id="wind-speed"></span> mph <span class="text-indigo-400 font-medium">E</span></span>
+      </div>
+      <div class="bg-slate-950/40 p-3 rounded-xl border border-white/5">
+        <span class="text-[10px] text-slate-500 block uppercase mb-1">Humidity Matrix</span>
+        <span class="font-bold text-slate-200"><span id="humidity"></span>%</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
