@@ -2,7 +2,7 @@ import { weatherObjectBuilder } from "./object.js";
 
 
 export async function fetchWeatherFromAPI() {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=e8f09b47f3f957d8164b5105c509f5f7&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=e8f09b47f3f957d8164b5105c509f5f7&units=metric`;
 
     const response = await fetch(url);
 
