@@ -4,7 +4,7 @@ const tempContainer = document.getElementById("temp-container");
 const windSpeedContainer = document.getElementById("wind-speed");
 const humidityLevel = document.getElementById("humidity");
 const feelsLikeContainer = document.getElementById("feels-like");
-
+const weatherContainer = document.getElementById("weather-container");
 
 
 async function renderWeather(){
