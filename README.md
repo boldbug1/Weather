@@ -7,7 +7,7 @@ A lightweight, client-side weather dashboard built using vanilla JavaScript, ES6
 ---
 
 ### 📱 Preview
-
+![Sample](https://github.com/boldbug1/Weather/blob/main/sample/sample.png "Sample V1")
 
 
 ---
